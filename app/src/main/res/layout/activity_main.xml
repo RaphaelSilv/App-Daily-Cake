@@ -9,7 +9,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
 
-            android:id="@+id/recyclerView_main"
+            android:id="@+id/recycler_view_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/white"

@@ -3,10 +3,11 @@ package com.example.workflowupdate.Model
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.example.workflowupdate.Interfaces.BaseAPI.Companion.AUX_IMAG
 import retrofit2.http.Body
 import com.google.gson.annotations.SerializedName
 
- class JSONPost (
+ data class JSONPost (
 
      @field:SerializedName("title") var title: String,
      @field:SerializedName("website") var website: String,
@@ -14,7 +15,7 @@ import com.google.gson.annotations.SerializedName
      @field:SerializedName("date") var date: String,
      @field:SerializedName("content") var content: String,
      @field:SerializedName("tags")  var tags : MutableList<Tags>,
-     @field:SerializedName("image_url") var image: String
+     var image: String = AUX_IMAG
 
 )
 
@@ -24,10 +25,5 @@ import com.google.gson.annotations.SerializedName
 
 
 
-class Tags
-{
-    @field:SerializedName("id") var id: Int = 0
-    @field:SerializedName("label")  var label: String = ""
 
 
-}

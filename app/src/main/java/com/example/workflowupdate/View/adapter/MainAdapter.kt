@@ -9,28 +9,29 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.workflowupdate.Interfaces.BaseAPI.Companion.AUX_IMAG
 import com.example.workflowupdate.Model.JSONPost
+import com.example.workflowupdate.Model.Tags
 import com.example.workflowupdate.R
 import com.squareup.picasso.Picasso
 
 import java.util.ArrayList
 
 class MainAdapter(private val context: Context, private val jsonPosts: ArrayList<JSONPost>) :
-    RecyclerView.Adapter<MainAdapter.ExampleViewHolderr>() {
+    RecyclerView.Adapter<MainAdapter.ExampleViewHolder>() {
 
 
 
-    inner class ExampleViewHolderr(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ExampleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         var imageView: ImageView
         var imageAux : ImageView
         var textViewTags : TextView
         var textViewdate: TextView
         var textViewtitle: TextView
-        var textViewAuthor: TextView // author
-        var textViewWebsite: TextView // title
-        var textViewContent: TextView  // content
-        var textViewLabels: TextView  // labels
-       // tags
+        var textViewAuthor: TextView
+        var textViewWebsite: TextView
+        var textViewContent: TextView
+        var textViewLabels: TextView
+
 
 
         init {
@@ -50,25 +51,28 @@ class MainAdapter(private val context: Context, private val jsonPosts: ArrayList
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExampleViewHolderr {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExampleViewHolder {
 
-        val v = LayoutInflater.from(context).inflate(R.layout.news_item, parent, false)
-        return ExampleViewHolderr(v)
+        val layoutInflater = LayoutInflater.from(context)
+        val celllForRow = layoutInflater.inflate(R.layout.news_item, parent, false)
+        return ExampleViewHolder(celllForRow)
     }
 
-    override fun onBindViewHolder(holder: ExampleViewHolderr, position: Int) {
+    override fun onBindViewHolder(holder: ExampleViewHolder, position: Int) {
+
         val currentJsonPost = jsonPosts[position]
+      //  val currentJsonPostTags : MutableList<Tags> = currentJsonPost.tags
 
         val imageUrl = currentJsonPost.image
         val imageAuxiliar = AUX_IMAG
 
-        val tags = currentJsonPost.tags
+       // val tags = currentJsonPost.tags
         val date = currentJsonPost.date
         val title = currentJsonPost.title
         val author = currentJsonPost.authors
         val content = currentJsonPost.content
         val website = currentJsonPost.website
-       // val labels = tags.label
+        //val labels = currentJsonPostTags[2]
 
 
         Picasso.with(context).load(imageUrl).fit().centerInside().into(holder.imageView)
