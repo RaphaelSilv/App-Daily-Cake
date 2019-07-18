@@ -40,6 +40,7 @@ dependencies {
     // third party dependencies
     implementation 'com.squareup.retrofit2:retrofit:2.4.0' //that is not the current version
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'// that is not the current version
 
     implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
 
@@ -66,7 +67,8 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$supportLibraryVersion"
     //5: Volley
     implementation 'com.android.volley:volley:1.1.0'
-
+    //6: Circle image view
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

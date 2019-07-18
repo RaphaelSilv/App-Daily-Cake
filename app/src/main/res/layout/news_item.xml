@@ -16,8 +16,8 @@
         <ImageView
                 android:id="@+id/image_view"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_height="300dp"
+
         />
 
 
@@ -25,18 +25,18 @@
                 android:id="@+id/text_view_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date :"
-                android:textColor="@android:color/black"
+
+                android:textColor="#0C0C0C"
                 android:textSize="15sp"
-        />
+                android:textStyle="bold" app:fontFamily="serif"/>
         <TextView
                 android:id="@+id/text_view_website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Website :"
-                android:textColor="@android:color/black"
+                android:textColor="#050505"
                 android:textSize="18sp"
-        />
+                app:fontFamily="serif"/>
 
         <TextView
                 android:id="@+id/text_view_title"
@@ -45,8 +45,8 @@
                 android:text="Title :"
                 android:textColor="@android:color/black"
                 android:fontFamily=""
-                android:textSize="25sp"
-        />
+                android:textSize="35sp"
+                android:typeface="normal" app:fontFamily="serif"/>
         <TextView
                 android:id="@+id/text_view_content"
                 android:layout_width="wrap_content"
@@ -61,33 +61,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Author :"
-                android:textColor="@android:color/black"
+                android:textColor="#0A0A0A"
                 android:fontFamily=""
                 android:textSize="16sp"
-        />
+                app:fontFamily="sans-serif" android:textStyle="italic"/>
         <TextView
-            android:id="@+id/text_view_labels"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Labels :"
-            android:textColor="@android:color/black"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="15sp"
-    />
-        <TextView
-                android:id="@+id/text_view_tags"
+                android:id="@+id/text_view_labels"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tags: :"
-                android:textColor="@android:color/black"
+                android:text="Labels :"
+                android:textColor="#0C0C0C"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="15sp"
-        />
-        <ImageView
-                android:id="@+id/image_aditional"
+                android:typeface="serif" app:fontFamily="monospace" android:textStyle="bold"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_icon"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:src="@mipmap/ic_launcher"
+
         />
 
     </LinearLayout>

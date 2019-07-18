@@ -16,6 +16,6 @@ interface BaseAPI {
 
         val BASE_URL = "https://cheesecakelabs.com/"
 
-        val AUX_IMAG = "https://scontent.ffln1-1.fna.fbcdn.net/v/t1.0-9/33120773_994483490709820_1905396463446261760_n.png?_nc_cat=100&_nc_oc=AQmd5WH3Z_OWeTiXYUmd3tzjTDY7xNjeNkcoggttZZzYjocTF6z54fsfHtWMYTrp0O7e7AO1XRzXixvud5P0dnxy&_nc_ht=scontent.ffln1-1.fna&oh=2a898db1dd6bdf4146da20a7951a9f46&oe=5DB79EBB"
+        val AUX_ICON = "https://scontent.ffln1-1.fna.fbcdn.net/v/t1.0-9/33120773_994483490709820_1905396463446261760_n.png?_nc_cat=100&_nc_oc=AQmd5WH3Z_OWeTiXYUmd3tzjTDY7xNjeNkcoggttZZzYjocTF6z54fsfHtWMYTrp0O7e7AO1XRzXixvud5P0dnxy&_nc_ht=scontent.ffln1-1.fna&oh=2a898db1dd6bdf4146da20a7951a9f46&oe=5DB79EBB"
     }
 }
