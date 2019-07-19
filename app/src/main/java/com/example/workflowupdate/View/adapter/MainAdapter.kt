@@ -1,20 +1,24 @@
 package com.example.workflowupdate.View.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.workflowupdate.Interfaces.BaseAPI.Companion.AUX_ICON
+import com.example.workflowupdate.Interfaces.BaseAPI.Companion.CKL_ICON
 import com.example.workflowupdate.Model.JSONPost
 import com.example.workflowupdate.Model.Tags
 import com.example.workflowupdate.R
+import com.example.workflowupdate.View.activty.AboutUsActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.news_item.view.*
 
 class MainAdapter(val bodyList: MutableList<JSONPost>) :
     RecyclerView.Adapter<MainAdapter.ExampleViewHolder>() {
+
+    var bodyDisplay: MutableList<JSONPost> = ArrayList(bodyList)
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExampleViewHolder {
@@ -26,13 +30,8 @@ class MainAdapter(val bodyList: MutableList<JSONPost>) :
 
     override fun onBindViewHolder(holder: ExampleViewHolder, position: Int) {
 
-
         val currentJsonPost = bodyList.get(position)
-
         val currentJsonPostTags: MutableList<Tags> = currentJsonPost.tags
-
-
-
 
         val tags = currentJsonPost.tags
         val date = "Date: " + currentJsonPost.date
@@ -41,17 +40,13 @@ class MainAdapter(val bodyList: MutableList<JSONPost>) :
         val content = currentJsonPost.content
         val website = currentJsonPost.website
         val imagePostUrl = currentJsonPost.imageUrl
-        print(imagePostUrl)
 
-         val test  = "http://res.cloudinary.com/cheesecakelabs/image/upload/v1488993901/challenge/news_01_illh01.jpg"
-
-          val imagePost = holder?.view?.image_view
-          Picasso.with(holder?.view?.context).load(imagePostUrl.replace("http", "https")).into(imagePost)
+        val imagePost = holder?.view?.image_view
+        Picasso.with(holder?.view?.context).load(imagePostUrl.replace("http", "https")).into(imagePost)
 
 
-          val cheeseIcon = holder.view.image_icon
-          Picasso.with(holder.view.context).load(AUX_ICON).into(cheeseIcon)
-
+        val cheeseIcon = holder.view.image_icon
+        Picasso.with(holder.view.context).load(CKL_ICON).into(cheeseIcon)
 
 
         lateinit var labels: String
@@ -73,7 +68,7 @@ class MainAdapter(val bodyList: MutableList<JSONPost>) :
         return bodyList.count()
     }
 
-   inner class ExampleViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    inner class ExampleViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
         var imageView: ImageView
         var imageAux: ImageView
@@ -95,8 +90,16 @@ class MainAdapter(val bodyList: MutableList<JSONPost>) :
             textViewContent = view.findViewById(R.id.text_view_content)
             textViewLabels = view.findViewById(R.id.text_view_labels)
 
+            view.setOnClickListener {
+
+                val intent = Intent(view.context, AboutUsActivity::class.java)
+                view.context.startActivity(intent)
+
+            }
+
 
         }
+
 
     }
 
