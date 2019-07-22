@@ -1,4 +1,3 @@
-
 <img align="right" width="100" height="100" src="favicon.png">
 
 # Trainee Developers Mobile Android (Cupcaker Program)
@@ -26,29 +25,27 @@ Also, some features pretend to help in the usability as a back navigate bar and 
 * Windows 10 10.0
 * Programming Language : Kotlin
 ~~~~
-
-### Dowloading project from github
-
-Unzip the project in preferecial folder
-In Android Studio go to  'Open an existing Android Studio Project'
-Look for the dowloaded project in that folder and choose it
-Now you open these folders   'App > Java > com.example.workflowupdate > View > activity > MainActivity
-In MainActivity
-go to
-Build > Clean Project
-make sure the project will be succesfully 'buillded', otherwise keep "cleaning the project"
-'Run > RunApp'
-if you already have a virtual device avaliable, choose it
-in the other hand if you don´t
-go to 'Create Neew Virtual Device > Phone
-choose any you want > Next
-and now download a **system image** [preferably a recent android version, 28+], after
-Next > Finish > OK
-
+### Downloading project from github
+~~~~
+* Unzip the project in preferecial folder
+* In Android Studio go to  'Open an existing Android Studio Project'
+* Look for the downloaded project in that folder and choose it
+* Now you open these folders   'App > Java > com.example.workflowupdate > View > activity > MainActivity
+* In MainActivity
+* go to
+* Build > Clean Project
+*** make sure the project will be succesfully 'buillded', otherwise keep "cleaning the project"
+* 'Run > RunApp'
+* if you already have a virtual device avaliable, choose it
+* in the other hand if you don´t
+* go to 'Create Neew Virtual Device > Phone
+* choose any you want > Next
+* and now download a **system image** [preferably a recent android version, 28+], after
+* Next > Finish > OK
+~~~~
 ### Welcome to Daily Cake ###
 ![](blog_page.png)
-
-Navigate by yourself, feel yourself at home.
+__Navigate by yourself, be free.__
 
 ## Development report
 
