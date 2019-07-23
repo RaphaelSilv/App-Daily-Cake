@@ -1,6 +1,6 @@
 <img align="right" width="100" height="100" src="favicon.png">
 
-# Trainee Developers Mobile Android (Cupcaker Program)
+# Trainee Developers / Mobile Android (Cupcaker Program)
 
 
 ### Cheesecakelabs
