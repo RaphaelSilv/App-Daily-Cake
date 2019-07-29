@@ -75,13 +75,7 @@ The used language was [Kotlin](https://kotlinlang.org/) and gret open libs such 
 
 ## Motivation
 
-Become a brad new cupcaker. Also, build that app was a huge opportunity to improve my programming skils, specifically in mobile development.
-
-## final considerations
-
-I just like to say thank you guys for this worthy opportunity. It was a huge experience and for sure I learned a lot. Is important let you know, that this was my first contact with mobile development and with kotlin programming language as well.
-I guarantee you, that none inconsistent in my code represents laziness or that sort of thing. I work with the best in me, and tried hard do the best I can with I alredy had in every piece of code.
-So, that's it. Thank you all again and I hope see you soon.
+Become a brand new cupcaker. Also, build that app was a huge opportunity to improve my programming skils, specifically in mobile development.
 
 ## License
 
