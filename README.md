@@ -9,7 +9,7 @@
 
 The purpose of the app is a bit simple, fetch a JSON file in a server, turn this in an obejct and display it in a screen.
 This object has some attributes, as img_url, for example, wich aims to be displayed in that screen as well.
-Also, some features pretend to help in the usability as a back navigate bar and a **singleTop** configuration wich means that whenever the user click in a image and go to a different view, when he come back "he will be"  at the same item of the *view* clicked.
+Also, some features intends to help in the usability as a back navigate bar and a **singleTop** configuration wich means that whenever the user click in a image and go to a different view, when he come back "he will be"  at the same item of the *view* clicked.
 
 <img width="150" height="150" src="android_kotlin.png">
 
